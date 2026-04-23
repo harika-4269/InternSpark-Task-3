@@ -1,0 +1,31 @@
+import pandas as pd
+import os
+
+# Use local file instead of Colab path
+csv_file_path = "california_housing_test.csv"
+
+print(f"Loading data from: {csv_file_path}")
+
+try:
+    if not os.path.exists(csv_file_path):
+        raise FileNotFoundError
+
+    df = pd.read_csv(csv_file_path)
+    print("\nDataset loaded successfully!")
+
+    # First 5 rows
+    print("\nFirst 5 rows of the dataset:")
+    print(df.head())
+
+    # Dataset info
+    print("\nDataset Information:")
+    df.info()
+
+    # Descriptive statistics
+    print("\nDescriptive Statistics:")
+    print(df.describe())
+
+except FileNotFoundError:
+    print(f"Error: File '{csv_file_path}' not found.")
+except Exception as e:
+    print(f"Error loading dataset: {e}")
