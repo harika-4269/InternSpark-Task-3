@@ -1,0 +1,24 @@
+Loading data from: california_housing_test.csv
+
+Dataset loaded successfully!
+
+First 5 rows of the dataset:
+   longitude  latitude  housing_median_age  total_rooms  total_bedrooms  population  households  median_income  median_house_value
+0    -122.05     37.37                  27         3885             661        1537         606         6.6085              344700
+1    -118.30     34.26                  43         1510             310         809         277         3.5990              176500
+2    -117.81     33.78                  27         3589             507        1484         495         5.7934              270500
+3    -118.36     33.82                  28           67              15          49          11         6.1359              330000
+4    -119.67     36.33                  19         1241             244         850         237         2.9375               81700
+
+Dataset Information:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 3000 entries, 0 to 2999
+Data columns (total 9 columns):
+...
+
+Descriptive Statistics:
+         longitude     latitude  housing_median_age  total_rooms  ...
+count  3000.000000  3000.000000         3000.000000  3000.000000
+mean   -119.589200    35.635390           28.845333  2599.578667
+min    -124.180000    32.560000            1.000000     6.000000
+max    -114.490000    41.920000           52.000000  30450.000000
